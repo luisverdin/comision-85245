@@ -110,16 +110,7 @@ p {
     color: #009ca8;
 }
 
-form{
-    padding: 90px;
-    width: 300px;
-    margin: 0 auto;
-    
-}
 
-.section-form{
-    background-color: antiquewhite;
-}
 
 .section-services {
     background-color: #e7e7e7;
@@ -221,18 +212,11 @@ footer{
 
 /* Página Nosotros */
 
-/* --- Team --- */
-:root{
-  --team-accent: #1e73ff;   /* azul para el nombre */
-  --team-muted: #6b7280;    /* gris del rol */
-  --radius: 16px;
-}
-
-.team{
+.equipo{
     padding: 32px 24px;
 }
 
-.team-grid{
+.equipo-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
@@ -240,26 +224,88 @@ footer{
     margin: 0 auto;
 }
 
-.member{
+.miembro{
     text-align: center;
+    --radius: 16px;
 }
 
-.member img{
+.miembro img{
     width: 100%;
     object-fit: cover;
     border-radius: var(--radius);
 }
 
 
-.member h3{
+.miembro h3{
     margin-top: 14px;
     font-size: 1.15rem;
     font-weight: 700;
-    color: var(--team-accent);
+    color: #009ca8
 }
 
-.member .role{
+.miembro .rol{
     margin-top: 4px;
     font-style: italic;
-    color: var(--team-muted);
+    color:#212121
+}
+
+/* Página Contacto */
+
+.section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.formulario {
+    background: #e7e7e7;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #212121;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6b7280;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 100px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background: #00c3d6;
+    color: #e7e7e7;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #e7e7e7;
+    color: #009ca8;
 }

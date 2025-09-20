@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<header class="fixed-top">
+    <header class="fixed-top">
         <section class="section-header">
             <img class="logo-header" src="../img/logo.png" alt="logo">
             <nav class="nav-bar">
@@ -42,23 +42,25 @@
         <h1>Contáctanos</h1>
         <section class="section-form">
             <!-- Formulario -->
-            <form action="/submit" method="post">
+            <form class="formulario">
+                <h2>¡Contáctanos!</h2>
+
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" />
+                <input type="text" id="nombre" name="nombre" required>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" />
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="telefono">Teléfono</label>
-                <input type="number" name="telefono" id="telefono" />
-
-                <label for="email">E-mail</label>
-                <input type="text" name="telefono" id="telefono" />
+                <input type="tel" id="telefono" name="telefono">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <input type="submit" value="Enviar" />
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
