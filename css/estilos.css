@@ -218,3 +218,48 @@ footer{
 .servicios{
     background-color: #e7e7e7;
 }
+
+/* Página Nosotros */
+
+/* --- Team --- */
+:root{
+  --team-accent: #1e73ff;   /* azul para el nombre */
+  --team-muted: #6b7280;    /* gris del rol */
+  --radius: 16px;
+}
+
+.team{
+    padding: 32px 24px;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.member{
+    text-align: center;
+}
+
+.member img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+
+.member h3{
+    margin-top: 14px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--team-accent);
+}
+
+.member .role{
+    margin-top: 4px;
+    font-style: italic;
+    color: var(--team-muted);
+}
