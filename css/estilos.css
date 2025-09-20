@@ -66,6 +66,13 @@ a {
     width: 100%
 }
 
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+
 h1 {
     text-align: center;
     font-style: italic;
@@ -81,17 +88,32 @@ p {
     list-style-position: inside;
 }
 
-footer{
-    margin-top: 30px;
-    padding-top: 150px;
-    background-color: rgb(15, 140, 145);
+.contenedor {
+    position: relative;
+
 }
 
-footer p{
-    text-align: right;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    
+.contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenedor .btn {
+    position: absolute; top: 90%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background: #009ca8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor .btn:hover {
+    background: #e7e7e7;
+    color: #009ca8;
 }
 
 form{
@@ -106,24 +128,75 @@ form{
 }
 
 .section-services {
-    margin: 20px;
+    background-color: #e7e7e7;
+    padding: 20px;
 }
 
 .grid-3x2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: repeat(2, 150px);  /* 2 filas */
+    grid-template-rows: repeat(2, 200px);  /* 2 filas */
     gap: 15px;
-    max-width: 600px;     /* ancho máximo del grid */
-    margin: 0 auto;       /* centra horizontalmente */
+    max-width: 1000px;     /* ancho máximo del grid */
+    margin: 0 auto;  
 }
 
 .item {
-    background: #e67e22;
+    background: #009ca8;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    flex-direction: column;   
+    justify-content:center;
+    align-items:center;      
+    font-size: 18px;
     border-radius: 8px;
+    text-align: center;    
+}
+
+.item:hover{
+    background-color: #212121;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 200px;
+    background: #212121;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #00c3d6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.grid-3x1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
