@@ -1,0 +1,17 @@
+$font-main: "Montserrat";
+$c-negro:       #212121;
+$c-gris-claro:  #e7e7e7;
+$c-principal:   #009ca8;
+$c-secundario:  #00c3d6;
+
+$radius: 8px;
+$gap: 16px;
+
+$bp-xl: 1200px;
+$bp-lg: 992px;
+$bp-md: 768px;
+$bp-sm: 576px;
+
+@mixin mq-max($w) {
+    @media (max-width: $w) { @content; }
+}
